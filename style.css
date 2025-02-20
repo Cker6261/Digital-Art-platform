@@ -115,4 +115,30 @@
       }
     }
     
+    #upload-section {
+      display: flex;
+      gap: 10px;
+      padding: 20px;
+      justify-content: center;
+  }
+  
+  #fileInput {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  
+  button {
+      padding: 10px 15px;
+      background: #E60023;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+  
+  button:hover {
+      background: #c4001d;
+  }
   
