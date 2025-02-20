@@ -1,14 +1,14 @@
 // Load AWS SDK
-const AWS = require('aws-sdk');
+import { config, S3 } from 'aws-sdk';
 
 // AWS Configuration
-AWS.config.update({
+config.update({
     accessKeyId: 'pinterest-s3-user',   // Replace with your AWS Access Key
     secretAccessKey: 'Chirag@6261', // Replace with your AWS Secret Key
     region: 'eu-north-1' // Replace with your AWS Region (e.g., us-east-1)
 });
 
-const s3 = new AWS.S3();
+const s3 = new S3();
 const bucketName = 'pinterest-clone-bucket';
 
 // Upload Image to S3
